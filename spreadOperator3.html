@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <script>
+            //We can use the spread operator with objects too:
+            const vehicle = {
+                brand: 'ford',
+                model: 'mustang',
+                color: 'red'
+            }
+            const vehicle2 = {
+                type: 'ty',
+                number: 'type4',
+                color: 'green'
+            }
+            const updateObject={...vehicle,...vehicle2};
+            document.write(updateObject);
+        </script>
+    </body>
+</html>
+
+

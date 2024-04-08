@@ -1,0 +1,4 @@
+--> get means jab hum get ki query chalayenge to database se sara cheese hume usse related milengi(server.get)--read API
+--> create API -----post method use hoga--exam db me 30 phone ki list hai but 31 karna hai tab post method use karte hai
+--> update API--- put method use karte hai
+---> delete API--- delete method hi use karte hai

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2>javascript</h2>
+        <p>when adding to a number with the script then it work as a string </p>
+    </head>
+    <body>
+        <p id="demo"> click here</p>
+        <script>
+            //let x = 16 + "volvo";
+           // let x = 16+4+"van";
+            let x = "van" + 17 + 4
+            document.getElementById("demo").innerHTML=x;
+        </script>
+    </body>
+</html>
+// JS object
+        //const person = {name:"Abhi" , lastname:"singh"}
+//JSON object or JSON string
+        //'{"name":"John", "age":30, "car":null}'--The data is only JSON when it is in a string format. 
+        When it is converted to a JavaScript variable, it becomes a JavaScript object.
+// JS object
+        myObj = {"name":"John", "age":30, "car":null}       
+//Normally, you create a JavaScript object by parsing a JSON string:
+        myJSON = '{"name":"John", "age":30, "car":null}';
+        myObj = JSON.parse(myJSON);        
+// array object 
+        const person =["Abhi" , "singh"]
+//This is a JSON string:
+       '["Ford", "BMW", "Fiat"]'    
+//Inside the JSON string there is a JSON array literal
+        ["Ford", "BMW", "Fiat"]          
+        In JSON, array values must be of type string, number, object, array, boolean or null.
+//You can create a JavaScript array from a literal:
+        myArray = ["Ford", "BMW", "Fiat"];  
+//You can create a JavaScript array by parsing a JSON string:
+          myJSON = '["Ford", "BMW", "Fiat"]';
+          myArray = JSON.parse(myJSON);    
+//Objects can contain arrays:
+    {
+    "name":"John",
+    "age":30,
+    "cars":["Ford", "BMW", "Fiat"]
+    }                    
+//In JavaScript, arrays use numbered indexes.  
+       //You should use objects when you want the element names to be strings (text).
+//In JavaScript, objects use named indexes.
+       //You should use arrays when you want the element names to be numbers.

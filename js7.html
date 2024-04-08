@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+          function myfunction(){
+            document.getElementById("demo").innerHTML="paragraph change."
+          }
+        </script>
+    </head>
+    <body>
+    <h2> A pagargraph</h2>
+    <p id="demo">
+        this is my paragraph
+    </p>
+    <button type="button" onClick="myfunction()">
+        try it
+    </button>
+    </body>
+</html>
+<!-- Placing scripts at the bottom of the <body> element improves the display speed, because script interpretation slows down the display. -->

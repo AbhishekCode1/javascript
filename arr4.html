@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The sort() Method</h2>
+
+<p>Sort the array in ascending order:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo1").innerHTML = points;  
+
+points.sort(function(a, b){return a - b});
+//The sorting function function(a, b){return a - b} compares two elements a and b. 
+// If the result of the subtraction a - b is negative, it means that a should come before b in the sorted array.
+// If the result is positive, it means that b should come before a. If the result is zero, the order remains unchanged.
+// So, the sorting function sorts the array in ascending order by subtracting b from a. This is a common pattern for sorting numeric arrays in ascending order.
+document.getElementById("demo2").innerHTML = points;
+</script>
+
+</body>
+</html>

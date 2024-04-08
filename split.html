@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The split() Method</h2>
+
+    <p>split() splits a string into an array of substrings, and returns the array:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let text = "How are you doing today?";
+        const myArray = text.split(" ");
+        console.log("myArray",myArray);
+        //myArray 
+// Array(5)
+// 0
+// : 
+// "How"
+// 1
+// : 
+// "are"
+// 2
+// : 
+// "you"
+// 3
+// : 
+// "doing"
+// 4
+// : 
+// "today?"
+
+        document.getElementById("demo").innerHTML = myArray; 
+    </script>
+
+</body>
+
+</html>

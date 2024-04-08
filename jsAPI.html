@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>javaScript Geolocation</h2>
+        <p>Click the button to get your coordination</p>
+        <button onclick="getLocation()">try it</button>
+        <p id="demo"></p>
+        <script>
+            const x =document.getElementById("demo");
+            function getLocation(){
+                try{
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                }
+                catch{
+                    x.innerHTML=err;
+                }
+            }
+            function showPosition(position){
+                x.innerHTMl="latitude" +position.coords.latitude + "<br>longitude:" +position.coords.longitude;
+            }
+        </script>
+    </body>
+</html>

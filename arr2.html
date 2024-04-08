@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript array</h1>
+<h2>The push() Method</h2>
+<p>The push method appends a new element to an array.</p>
+<button onclick="myFuction()">try it</button>
+<p id="demo"></p>
+<script>
+    const arr = ["Banana","Orange","Apple"];
+    document.getElementById("demo").innerHTML= arr;
+
+    function myFuction(){
+        arr.push("lemon");
+        document.getElementById("demo").innerHTML = arr;
+    }
+</script>
+</body>
+</html>

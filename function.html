@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+</html>
+
+// function can be stored in the variable;
+like 
+const x= function(a,b){
+    return a*b;
+} 
+now you can use this variable 
+exam
+let z = x(4,3)
+
+----------------------------------------------------------------------------------------------------------------
+function add(x, y) {   this is a named function because function has a name add.
+    return x + y;
+}
+
+// Usage
+var result = add(3, 4);
+console.log(result); // Outputs 7
+---------------------------------------------------------------------------------------------------------
+var result = (function(x, y) {
+    return x + y;
+})(3, 4);
+console.log(result); // Outputs 7
+------------------------------------------------------------------------------------------------------------
+Functions can also be defined with a built-in JavaScript function constructor called Function()
+

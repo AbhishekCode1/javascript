@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1 id="demo"></h1>
+</head>
+
+<body>
+    <script>
+        //Syntax: condition ? <expression if true> : <expression if false>
+           
+        function renderApp() {
+            document.getElementById("demo").innerHTML = "Welcome!";
+        }
+
+        function renderLogin() {
+            document.getElementById("demo").innerHTML = "Please log in";
+        }
+
+        let authenticated = true;
+
+        authenticated ? renderApp() : renderLogin();
+    </script>
+</body>
+
+</html>

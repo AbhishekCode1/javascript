@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>What Can JavaScript Do? </h2>
+        <p id="demo1" style="display: none">JavaScript can show hidden HTML elements.</p>
+        <p id="demo2" style="display: none">Hello JavaScript!</p>
+        <button type="button" onclick="showParagraphs()">
+            Click me
+        </button>
+
+        <script>
+            function showParagraphs() {
+                var demo1 = document.getElementById('demo1');
+                var demo2 = document.getElementById('demo2');
+
+                demo1.style.display = 'block';
+                demo2.style.display = 'block';
+            }
+        </script>
+    </body>
+</html>
